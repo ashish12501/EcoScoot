@@ -7,12 +7,18 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { useEffect, useContext } from 'react';
 import { TailSpin } from 'react-loader-spinner';
 import { AppContext } from '../App'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 
 export function BookingForm() {
   const { userData } = useContext(AppContext)
   const [errormsg, setErrorMsg] = useState("");
   const [loading, setLoading] = useState(false);
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false)
+
+  const notify = () => toast("Booking Sucessfull !!");
   function switchState() {
     setSubmitButtonDisabled(!submitButtonDisabled)
   }
@@ -57,7 +63,8 @@ export function BookingForm() {
       // const docRef = addDoc(bookingref, bookingData);
 
       console.log("Document written with ID: ", docRef.id);
-      alert("Booking Successful");
+      notify();
+      // alert("Booking Successful");
       setBookingData(prevData => ({
         ...prevData,
         bike: "",
@@ -78,6 +85,7 @@ export function BookingForm() {
   return (
 
     <div className='Booking'>
+      <ToastContainer />
       <div className='formBody'>
         <h2>Book a bike:</h2>
         <form className="form">
