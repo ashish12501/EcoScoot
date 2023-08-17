@@ -1,0 +1,107 @@
+.ContactPage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/EVbanner.png);
+    height: 88vh;
+}
+
+
+.Contactbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.Contactbox1Grp {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.talk {
+    margin-bottom: 50px;
+}
+
+.email {
+    margin-bottom: 40px;
+
+}
+
+.Contactbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+}
+
+.Contactbox2 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35vw;
+}
+
+.Contactbox2 textarea {
+    width: 95%;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 19px 30px;
+}
+
+.Contactbox2 button {
+    width: 95%;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    background-color: #65C452;
+    width: 31%;
+    margin-right: 2%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    margin-top: 25px;
+    width: 96%;
+    border-radius: 3px;
+    margin-bottom: -2%;
+}
+
+
+@media (max-width: 480px) {
+    .ContactPage {
+        flex-direction: column;
+        height: max-content;
+        padding: 40px;
+    }
+
+    .Contactbox1,
+    .Contactbox2 {
+        width: 100vw;
+    }
+
+    .Contactbox1 {
+        margin-bottom: 50px;
+    }
+
+    .Contactbox1 .Contactbox1Grp {
+        width: 80%;
+    }
+
+    .Contactbox2 form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 80%;
+    }
+
+
+}

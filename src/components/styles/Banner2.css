@@ -1,0 +1,27 @@
+.banner2 {
+    background-image: url(../images/EVbannerOPQ.jpg);
+    height: 60vh;
+    color: #ffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner2 h1 {
+    font-size: 3.1rem;
+    width: 50vw;
+    margin: 80px 0 0 80px;
+}
+
+@media (max-width: 480px) {
+    .banner2 {
+        height: 20vh;
+        background-image: url(../images/EVbannerOPQ2.jpg);
+    }
+
+    .banner2 h1 {
+        font-size: 1.8rem;
+        width: 80%;
+        margin: 40px 0 0 50px;
+    }
+}

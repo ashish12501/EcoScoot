@@ -1,24 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import { Navbar } from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { Contact } from './pages/Contact'
+import { Home } from './pages/Home'
+import { About } from './pages/about'
+import { EVmodels } from './pages/EVmodels'
+import { Login } from './pages/Login'
+import { Register } from './pages/Register'
+import { Admin } from './pages/admin'
+import { useEffect, useState, createContext } from 'react'
+import { auth } from './config/firebase';
+
+
+export const AppContext = createContext();
 
 function App() {
+  const [userData, setUserData] = useState([])
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      setUserData(user)
+    })
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppContext.Provider value={{ userData, setUserData }}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/EVmodels' element={<EVmodels />} />
+          <Route path='/aboutus' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/register' element={<Register />} />
+          <Route path='/admin' element={<Admin />} />
+        </Routes>
+      </Router>
+    </AppContext.Provider>
   );
 }
 

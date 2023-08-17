@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+    margin: 10vh;
+}
+
+.formBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 90vw;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
+}
+
+.formBody h2 {
+    margin-top: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px;
+    width: 80vw;
+}
+
+.form1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2%;
+    width: 75vw;
+}
+
+.form2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2%;
+    width: 75vw;
+
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+select {
+    border: 1px solid #ccd7e6;
+    border-radius: 3px;
+    color: #ababab;
+    padding: 1rem 0;
+    font-weight: 400;
+    outline: none;
+    padding: 1rem 0;
+    width: 96%;
+    margin-bottom: 5px;
+
+}
+
+label {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+input {
+    border: 1px solid #ccd7e6;
+    color: #ababab;
+    outline: none;
+    background-color: #EFEFEF;
+    width: 96%;
+    border-radius: 3px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 5px;
+}
+
+.formbtn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 33%;
+
+}
+
+.btn {
+    border: none;
+    color: #ffffff;
+    outline: none;
+    background-color: #65C452;
+    width: 31%;
+    margin-right: 2%;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem 0;
+    margin-top: 25px;
+    width: 96%;
+    border-radius: 3px;
+    margin-bottom: -2%;
+}
+
+.SubmitLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorBooking {
+    margin-top: 15px;
+    margin-bottom: -10px;
+}
+
+.btn:disabled {
+    background-color: gray;
+}
+
+@media (max-width: 480px) {
+
+    .Booking {
+        margin: 7vh;
+    }
+
+    .form1,
+    .form2 {
+        flex-direction: column;
+    }
+
+
+    .formBody {
+        height: 90%;
+    }
+
+    .formbtn {
+        width: 93%;
+    }
+
+    .entry {
+        width: 93%;
+    }
+
+    label {
+        margin-bottom: 0px;
+    }
+
+    select,
+    input {
+        margin-bottom: 15px;
+    }
+}

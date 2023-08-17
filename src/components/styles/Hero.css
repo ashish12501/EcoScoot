@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+
+.hero {
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 87vh;
+    width: 45%;
+    padding: 0 0 40px 0;
+}
+
+.left h2 {
+    font-size: 300%;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
+
+.left h2 span {
+    color: #65C452;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left p {
+    color: rgb(102, 101, 101);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    text-align: start;
+}
+
+.left .buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+}
+
+.left .buttons button {
+    background-color: #65C452;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffff;
+    border: none;
+    padding: 15px 22px;
+    border-radius: 2.59px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2 5px;
+    margin-top: 20px;
+}
+
+.left .buttons .button1 {
+    margin-right: 10px;
+}
+
+.left .buttons .button2 {
+    background-color: #000000;
+    margin-left: 10px;
+}
+
+@media (min-width: 480px) {
+    .left .buttons .button2:hover {
+        background-color: #ffff;
+        color: #000000;
+        border: 2px solid black;
+        padding: 13px 20px;
+
+    }
+}
+
+
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+    width: 55%;
+    background-image: url(../images/Ellipse.png) !important;
+}
+
+.right img {
+    width: 85%;
+    height: 100%;
+    flex-shrink: 0;
+    margin-right: 20%;
+    padding-top: 15px;
+}
+
+@media (max-width:890px) {
+
+    .left h2,
+    .left h2 span {
+        font-size: 2rem;
+    }
+
+    .left,
+    .right {
+        width: 50%;
+    }
+
+    .right img {
+        width: 75%;
+        height: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .hero {
+        flex-direction: margin column;
+    }
+
+    .left {
+        width: 100%;
+        height: 67vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .left h2,
+    .left p,
+    .left .buttons {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: center;
+
+    }
+
+    .left .buttons {
+        margin-left: 0%;
+    }
+
+    .left h2,
+    .left h2 span {
+        font-size: 2.7rem;
+        margin-top: 30px;
+    }
+
+    .left p {
+        font-weight: 450;
+    }
+
+    .left .buttons {
+        flex-direction: column;
+    }
+
+    .left .buttons button {
+        padding: 20px 90px;
+    }
+
+
+    .left .buttons .button1 {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+
+    .left .buttons .button2 {
+        margin-left: 0px;
+        margin-top: 20px;
+        /* border: 2px solif black; */
+    }
+
+}

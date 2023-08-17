@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.RentalModel {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 50px;
+    /* border: 2px solid red; */
+}
+
+.RentalModelGrp {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -50px;
+
+}
+
+.Modelsbox1 {
+    /* height: 35%; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+
+.Modelsbox1 h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Modelsbox1 h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Modelsbox1 p {
+    width: 55%;
+    margin-top: 10px;
+}
+
+.Modelsbox2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.bikeImage {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bikeImage img {
+    height: 400px;
+}
+
+.bikeNames,
+.bikeSpecs {
+    width: 21%;
+    margin: 0 0px;
+}
+
+.bikeNames {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 35px; */
+}
+
+.bikeNames .selected {
+    background-color: #65C452;
+    color: #ffff;
+}
+
+.bikeNames button {
+    height: 60px;
+    width: 255px;
+    margin-bottom: 10px;
+    border: none;
+    color: #000000;
+    background-color: #efefef;
+    outline: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.bikeSpecs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bikeSpecs .Price {
+    width: 100%;
+    background-color: #65C452;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    border: none;
+    /* margin-bottom: 5px; */
+}
+
+.bikeSpecs .Price span {
+    font-weight: 900;
+    font-size: 1.5rem;
+
+}
+
+.bikeSpecs .Price h2 {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.bikeSpecs .Specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 5px 0; */
+    border: 1px solid black;
+    width: 100%;
+    /* padding-top: 5px; */
+    height: 45px;
+}
+
+.bikeSpecs .Specs .specbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.bikeSpecs .Specs .SpecID,
+.bikeSpecs .Specs .SpecValue {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 15px;
+    border-right: 1px dotted black;
+    width: 125px;
+    text-align: center;
+}
+
+.RideNow {
+    width: 100%;
+    background-color: #65C452;
+    color: #ffff;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+}
+
+
+@media (max-width: 480px) {
+
+    .RentalModel {
+        height: 170vh;
+        margin-top: 0px;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox1 {
+        margin-bottom: 60px;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox1 h1 {
+        font-size: 2.2rem;
+        width: 90vw;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox1 p {
+        width: 90vw;
+        font-size: 14px;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox2 {
+        flex-direction: column;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox2 .bikeNames {
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox2 .bikeNames button {
+        width: 100%;
+    }
+
+    .RentalModel .RentalModelGrp .Modelsbox2 .bikeSpecs {
+        width: 70vw;
+    }
+
+    .bikeSpecs .Specs .SpecID {
+        width: 35vw;
+    }
+
+
+    .bikeImage img {
+        height: 320px;
+    }
+}

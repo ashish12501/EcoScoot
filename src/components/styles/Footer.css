@@ -1,0 +1,128 @@
+.Footer {
+    background-color: #f8f8f8;
+
+}
+
+.FooterGrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.footerbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+}
+
+.Footerlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+}
+
+
+
+.Footer .FooterGrp .footerbox .Footerlogo img {
+    height: 40px;
+
+}
+
+.Footer .FooterGrp .footerbox1 {
+    text-align: start;
+    width: 26vw;
+}
+
+.FooterLinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.Footer .FooterGrp .FooterLinks .footerbox2 {
+    width: 30vw;
+}
+
+.Footer .FooterGrp .FooterLinks .footerbox3 {
+    width: 25vw;
+}
+
+.Footer .FooterGrp .footerbox1 p {
+    font-size: 1.2rem;
+}
+
+
+.Footer .FooterGrp .footerbox .Footerlogo h2 {
+    font-size: 1.8rem;
+    margin-left: 10px;
+    font-weight: 800;
+
+}
+
+.Footer .FooterGrp .footerbox h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.Footer .developer {
+    margin: 20px 0;
+}
+
+.Footer .FooterGrp .footerbox p {
+    padding: 5px 0;
+}
+
+.Footer .FooterGrp .footerbox2 p:hover {
+    color: #65C452;
+    cursor: pointer;
+}
+
+.Footer .FooterGrp .footerbox3 p:hover {
+    color: #65C452;
+    cursor: pointer;
+}
+
+.Footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Footer hr {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    color: #FEFEFE;
+    height: 2px;
+}
+
+@media (max-width: 480px) {
+    .FooterGrp {
+        flex-direction: column;
+    }
+
+    .Footer .FooterGrp .footerbox1 {
+        text-align: start;
+        width: 80vw;
+        margin-bottom: 40px;
+    }
+
+    .Footer .FooterGrp .footerbox1 p {
+        margin-top: -15px;
+    }
+
+    .Footer .FooterGrp .FooterLinks .footerbox2 {
+        width: 55vw;
+        justify-content: start;
+    }
+
+    .Footer .FooterGrp .FooterLinks .footerbox3 {
+        width: 25vw;
+        justify-content: start;
+
+    }
+}
