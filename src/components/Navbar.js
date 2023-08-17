@@ -48,11 +48,11 @@ export const Navbar = () => {
             <Link className='Links' to="/aboutus" onClick={toggleMenu}>Aboutus</Link>
           </li>
           <li>
-            <Link className='Links' to="contact" onClick={toggleMenu}>Contact</Link>
+            <Link className='Links' to="/contact" onClick={toggleMenu}>Contact</Link>
           </li>
         </ul>
         <div className={`navbar_buttons ${isMenuOpen ? 'active2' : ''}`}>
-          <Link className='navbar_loginbutton' href='/login'>Login</Link>
+          <Link className='navbar_loginbutton' to='/login'>Login</Link>
           <Link className='navbar_registerbutton' to='/register'>Register</Link>
         </div>
       </div>

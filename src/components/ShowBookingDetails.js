@@ -9,9 +9,7 @@ export function ShowBookingDetails() {
 
     const [bookingsList, setBookingsList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    const { userData } = useContext(AppContext)
-
-
+    const { userData } = useContext(AppContext);
 
     useEffect(() => {
         const getBookings = async () => {
@@ -32,11 +30,10 @@ export function ShowBookingDetails() {
     }, []);
 
 
-    // if (userData === null) {
-    //     return <p>Login as Admin to view this page</p>
-    // }
-    // else if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2" ) {
-    if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2" || userData === null) {
+    if (userData === null) {
+        return <p>Login as Admin to view this page</p>
+    }
+    else if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2") {
         return (
             <div className="ShowBookingsList">
                 <div className="Bookingscontainer">
