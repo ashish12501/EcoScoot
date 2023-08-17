@@ -32,10 +32,11 @@ export function ShowBookingDetails() {
     }, []);
 
 
-    if (userData === null) {
-        return <p>Login as Admin to view this page</p>
-    }
-    else if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2") {
+    // if (userData === null) {
+    //     return <p>Login as Admin to view this page</p>
+    // }
+    // else if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2" ) {
+    if (userData.uid === "INJ5RoUppoSluMcrBw9X3GTaOYk2" || userData === null) {
         return (
             <div className="ShowBookingsList">
                 <div className="Bookingscontainer">
