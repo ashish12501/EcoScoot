@@ -52,7 +52,7 @@ export const Navbar = () => {
           </li>
         </ul>
         <div className={`navbar_buttons ${isMenuOpen ? 'active2' : ''}`}>
-          <Link className='navbar_loginbutton' to='/login'>Login</Link>
+          <Link className='navbar_loginbutton' to={"/login"}>Login</Link>
           <Link className='navbar_registerbutton' to='/register'>Register</Link>
         </div>
       </div>
