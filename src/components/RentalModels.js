@@ -1,9 +1,11 @@
-import React from 'react'
 import './styles/RentalModels.css'
 import { useState } from 'react';
 
+
+
 export function RentalModels({ bikeData }) {
   const [selectedCar, setSelectedCar] = useState(bikeData[0]);
+
   return (
     <div className='RentalModel'>
       <div className='RentalModelGrp'>

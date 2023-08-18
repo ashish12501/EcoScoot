@@ -54,8 +54,8 @@ export function Registerform() {
                 <form>
                     <input type="text" placeholder='Full Name' onChange={(event) => setUserData((prev) => ({ ...prev, name: event.target.value }))}></input>
                     <input type="text" placeholder='Enter Email' onChange={(event) => setUserData((prev) => ({ ...prev, email: event.target.value }))}></input>
-                    <input type="text" placeholder='Password' onChange={(event) => setUserData((prev) => ({ ...prev, pass: event.target.value }))}></input>
-                    <input type="text" placeholder='Confirm Password' onChange={(event) => setUserData((prev) => ({ ...prev, confirmpass: event.target.value }))}></input>
+                    <input type="password" placeholder='Password' onChange={(event) => setUserData((prev) => ({ ...prev, pass: event.target.value }))}></input>
+                    <input type="password" placeholder='Confirm Password' onChange={(event) => setUserData((prev) => ({ ...prev, confirmpass: event.target.value }))}></input>
                     <p className='error' style={{ color: "red" }}>{errormsg}</p>
                     <button type='button' className='registerbtn' onClick={handleSubmit} disabled={submitButtonDisabled}>
                         {loading ? (

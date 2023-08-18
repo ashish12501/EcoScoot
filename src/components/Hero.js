@@ -1,8 +1,10 @@
 import React from 'react';
 import './styles/Hero.css';
 import OLAgreen from './images/OLAgreen.png'
+import { useNavigate } from 'react-router-dom'
 
 export function Hero() {
+    const navigate = useNavigate();
     return (
         <div className='hero'>
             <div className='left'>
@@ -10,7 +12,7 @@ export function Hero() {
                 <p>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
                 <div className='buttons'>
                     <button className='button1'> <a href="#BookingPage">Book Ride</a></button>
-                    <button className='button2'>Know More</button>
+                    <button className='button2' onClick={() => navigate("/aboutus")}>Know More</button>
                 </div>
             </div>
 
