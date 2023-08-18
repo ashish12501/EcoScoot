@@ -9,7 +9,7 @@ export function Hero() {
                 <h2 className='maintext'>Move a step <span>greener</span> with our EcoScoot</h2>
                 <p>Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
                 <div className='buttons'>
-                    <button className='button1'>Book Ride</button>
+                    <button className='button1'> <a href="#BookingPage">Book Ride</a></button>
                     <button className='button2'>Know More</button>
                 </div>
             </div>

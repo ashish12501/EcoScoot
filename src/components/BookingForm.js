@@ -84,7 +84,7 @@ export function BookingForm() {
 
   return (
 
-    <div className='Booking'>
+    <div id='BookingPage' className='Booking'>
       <ToastContainer />
       <div className='formBody'>
         <h2>Book a bike:</h2>

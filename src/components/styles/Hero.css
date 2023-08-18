@@ -66,6 +66,11 @@
     margin-right: 10px;
 }
 
+.left .buttons .button1 a {
+    color: white;
+    text-decoration: none;
+}
+
 .left .buttons .button2 {
     background-color: #000000;
     margin-left: 10px;
