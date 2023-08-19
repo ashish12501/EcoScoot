@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import React from 'react'
 import './styles/Navbar.css';
 import menu from "./images/menu.png";
+import menu2 from "./images/menu2.png";
+
 import { useState } from 'react';
 import Logo from "./images/Logo.png"
 import { getAuth, signOut } from "firebase/auth";
@@ -35,7 +37,7 @@ export const Navbar = () => {
           <h2>EcoScoot</h2>
         </div>
         <div className={`hamburger`} onClick={toggleMenu}>
-          <img src={menu} alt="menu" />
+          {isMenuOpen ? <img src={menu2} alt="menu" /> : <img src={menu} alt="menu" />}
         </div>
         <ul className={isMenuOpen ? "active" : ""}>
           <li>
@@ -68,7 +70,7 @@ export const Navbar = () => {
           <h2>EcoScoot</h2>
         </div>
         <div className={`hamburger`} onClick={toggleMenu}>
-          <img src={menu} alt="menu" />
+          {isMenuOpen ? <img src={menu2} alt="menu" /> : <img src={menu} alt="menu" />}
         </div>
         <ul className={isMenuOpen ? "active" : ""}>
           <li>
@@ -100,7 +102,7 @@ export const Navbar = () => {
           <h2>EcoScoot</h2>
         </div>
         <div className={`hamburger`} onClick={toggleMenu}>
-          <img src={menu} alt="menu" />
+          {isMenuOpen ? <img src={menu2} alt="menu" /> : <img src={menu} alt="menu" />}
         </div>
         <ul className={isMenuOpen ? "active" : ""}>
           <li>

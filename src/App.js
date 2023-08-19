@@ -12,16 +12,24 @@ import { useEffect, useState, createContext } from 'react'
 import { auth } from './config/firebase';
 
 
+
+
+
+
 export const AppContext = createContext();
 
 function App() {
   const [userData, setUserData] = useState([])
+
 
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
       setUserData(user)
     })
   })
+
+
+
 
   return (
     <AppContext.Provider value={{ userData, setUserData }}>

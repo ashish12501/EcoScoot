@@ -1,11 +1,8 @@
 import './styles/RentalModels.css'
 import { useState } from 'react';
 
-
-
 export function RentalModels({ bikeData }) {
   const [selectedCar, setSelectedCar] = useState(bikeData[0]);
-
   return (
     <div className='RentalModel'>
       <div className='RentalModelGrp'>
@@ -22,7 +19,7 @@ export function RentalModels({ bikeData }) {
 
           </div>
           <div className='bikeImage'>
-            <img src={selectedCar.image} alt=""></img>
+            <img src={selectedCar.imageLink} alt=""></img>
 
           </div>
           <div className='bikeSpecs'>
