@@ -17,10 +17,6 @@ export function Home() {
     const [isLoading, setIsLoading] = useState(true);
     const [bikeData, setBikeData] = useState([])
 
-
-
-
-
     useEffect(() => {
         const getBikeData = async () => {
             try {

@@ -2,7 +2,7 @@ import './styles/RentalModels.css'
 import { useState } from 'react';
 
 export function RentalModels({ bikeData }) {
-  const [selectedCar, setSelectedCar] = useState(bikeData[0]);
+  const [selectedCar, setSelectedCar] = useState(bikeData[0] || {});
   return (
     <div className='RentalModel'>
       <div className='RentalModelGrp'>
@@ -16,7 +16,6 @@ export function RentalModels({ bikeData }) {
             {bikeData.map((bike) => (<button key={bike.name}
               onClick={() => setSelectedCar(bike)}
               className={selectedCar === bike ? 'selected' : ''}>{bike.name}</button>))}
-
           </div>
           <div className='bikeImage'>
             <img src={selectedCar.imageLink} alt=""></img>

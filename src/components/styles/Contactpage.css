@@ -75,7 +75,7 @@
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 780px) {
     .ContactPage {
         flex-direction: column;
         height: max-content;
