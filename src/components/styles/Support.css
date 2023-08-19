@@ -77,6 +77,39 @@ img {
     text-align: center;
 }
 
+@media (max-width: 780px) {
+
+    .box1 {
+        padding: 0 50px;
+    }
+
+    .box2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 95%;
+        margin-bottom: 40px;
+    }
+
+    .card p {
+        width: 80%;
+    }
+
+    .Support {
+        height: max-content;
+    }
+
+    .Support .SupportGrp .box1 h1 {
+        margin-bottom: 0px;
+    }
+
+    .box1 {
+        height: 10%
+    }
+}
+
 @media (max-width: 480px) {
     .box2 {
         flex-direction: column;

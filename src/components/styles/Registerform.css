@@ -104,6 +104,8 @@
     background-color: gray;
 }
 
+@media (max-width: 780px) {}
+
 @media (max-width: 480px) {
     .registerpage .registerform h1 {
         font-size: 23px;

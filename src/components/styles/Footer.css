@@ -100,7 +100,9 @@
     height: 2px;
 }
 
-@media (max-width: 480px) {
+
+
+@media (max-width: 780px) {
     .FooterGrp {
         flex-direction: column;
     }

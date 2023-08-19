@@ -192,7 +192,13 @@
 
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 780px) {
+    .RentalModel .RentalModelGrp .Modelsbox1 p {
+        width: 70vw;
+    }
+} */
+
+@media (max-width: 780px) {
 
     .RentalModel {
         height: 170vh;

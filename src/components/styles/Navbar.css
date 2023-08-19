@@ -129,13 +129,13 @@
     height: 32px;
 }
 
-@media (max-width:890px) {
+/* @media (max-width:890px) {
     .navbar ul {
         display: none;
     }
-}
+} */
 
-@media (max-width: 480px) {
+@media (max-width: 980px) {
 
     .navbar {
         padding: 12px 15px;

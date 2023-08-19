@@ -129,6 +129,34 @@ input {
     background-color: gray;
 }
 
+@media (max-width: 780px) {
+    .formBody {
+        width: 95vw;
+    }
+
+    .form1,
+    .form2 {
+        width: 85vw;
+        /* border: 2px solid red; */
+    }
+
+    .Booking {
+        margin: 5vh 0;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .form2 .entry {
+        width: 37%;
+    }
+
+    .formbtn {
+        width: 37%;
+    }
+}
+
 @media (max-width: 480px) {
 
     .Booking {
