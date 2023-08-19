@@ -12,7 +12,7 @@ export function Footer() {
                         <img src={Logo} alt=""></img>
                         <h2>EcoScoot</h2>
                     </div>
-                    <p>Travell back with memories not longer bills, EcoScoot the pocket friendky rental.</p>
+                    <p>Travell back with memories not longer bills, EcoScoot the pocket friendly rental.</p>
                 </div>
                 <div className='FooterLinks'>
                     <div className='footerbox footerbox2'>
@@ -30,7 +30,7 @@ export function Footer() {
                 </div>
             </div>
             <hr />
-            <p className='developer'>Developed by ©ashish yadav with love </p>
+            <p className='developer'>Developed by ©ashish yadav with love ❤️</p>
         </div >
     )
 }

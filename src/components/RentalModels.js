@@ -64,7 +64,7 @@ export function RentalModels({ bikeData }) {
               </div>
               <div><h3 className='SpecValue'>{selectedCar.motorPower}</h3></div>
             </div>
-            <button className='RideNow'>Ride Now</button>
+            <button className='RideNow'><a href="#BookingPage">Ride Now</a></button>
           </div>
         </div>
       </div>

@@ -102,6 +102,10 @@
     font-weight: 700;
 }
 
+.bikeNames button:hover {
+    cursor: pointer;
+}
+
 .bikeSpecs {
     display: flex;
     flex-direction: column;
@@ -158,9 +162,13 @@
     font-size: 1rem;
     font-weight: 500;
     padding: 0 15px;
-    border-right: 1px dotted black;
     width: 125px;
     text-align: center;
+}
+
+.bikeSpecs .Specs .SpecID {
+    border-right: 1px dotted black;
+
 }
 
 .RideNow {
@@ -174,6 +182,15 @@
     border: none;
 }
 
+.RideNow:hover {
+    cursor: pointer;
+}
+
+.RideNow a {
+    text-decoration: none;
+    color: #ffff;
+
+}
 
 @media (max-width: 480px) {
 
