@@ -129,7 +129,7 @@ input {
     background-color: gray;
 }
 
-@media (max-width: 780px) {
+@media only screen and (max-width: 780px) and (min-width: 480px) {
     .formBody {
         width: 95vw;
     }
@@ -137,7 +137,6 @@ input {
     .form1,
     .form2 {
         width: 85vw;
-        /* border: 2px solid red; */
     }
 
     .Booking {
