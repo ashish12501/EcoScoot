@@ -152,6 +152,7 @@
     }
 
     .left {
+        margin-top: 40px;
         width: 100%;
         height: 67vh;
         align-items: center;
@@ -203,7 +204,6 @@
     .left .buttons .button2 {
         margin-left: 0px;
         margin-top: 20px;
-        /* border: 2px solif black; */
     }
 
 }
