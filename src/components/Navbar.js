@@ -11,7 +11,6 @@ import { useContext } from 'react'
 import { AppContext } from '../App'
 
 
-
 export const Navbar = () => {
   const auth = getAuth();
   const { userData } = useContext(AppContext)
@@ -53,7 +52,6 @@ export const Navbar = () => {
             <Link className='Links' to="/contact" onClick={toggleMenu}>Contact</Link>
           </li>
         </ul>
-
 
         <div className={`navbar_buttons ${isMenuOpen ? 'active2' : ''}`}>
           <Link className='navbar_loginbutton' onClick={toggleMenu} to="/login">Login</Link>
@@ -126,5 +124,4 @@ export const Navbar = () => {
       </div>
     )
   }
-
 }

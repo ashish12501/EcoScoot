@@ -100,6 +100,12 @@
     height: 87vh;
     width: 55%;
     background-image: url(../images/Ellipse.png) !important;
+    background-repeat: no-repeat;
+    /* Prevent image repetition */
+    background-size: cover;
+    /* Cover the entire background */
+    background-position: center;
+    /* Center the image */
 }
 
 .right img {

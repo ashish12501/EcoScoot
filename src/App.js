@@ -12,10 +12,6 @@ import { useEffect, useState, createContext } from 'react'
 import { auth } from './config/firebase';
 
 
-
-
-
-
 export const AppContext = createContext();
 
 function App() {
@@ -27,9 +23,6 @@ function App() {
       setUserData(user)
     })
   })
-
-
-
 
   return (
     <AppContext.Provider value={{ userData, setUserData }}>
